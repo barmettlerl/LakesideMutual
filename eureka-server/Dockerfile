@@ -1,4 +1,3 @@
-# syntax=docker/dockerfile:experimental
 FROM maven:3.5.2-jdk-8 AS build
 ARG BASE=/usr/src/app
 COPY pom.xml ${BASE}/

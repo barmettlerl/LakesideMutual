@@ -1,4 +1,3 @@
-# syntax=docker/dockerfile:experimental
 FROM node:10 as build
 WORKDIR /usr/src/app
 COPY package.json ./

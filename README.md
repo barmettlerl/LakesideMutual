@@ -52,7 +52,7 @@ To learn more about individual components, please have a look at the README file
 
 ## Getting started 
 
-Detailed setup instructions can be found in each application's README file. To conveniently start all applications, the `run_all_applications` scripts can be used or alternativaly. Alternatively, to start a minimal subset of applications, i.e., the Customer Management Applications and the Customer Core, use the `run_customer_management_applications` script.
+Detailed setup instructions can be found in each application's README file. To conveniently start all applications, the `run_all_applications` scripts can be used. Alternatively, to start a minimal subset of applications, i.e., the Customer Management Applications and the Customer Core, use the `run_customer_management_applications` script.
 
 
 1. Make sure you have [Java 8, 11 or 15](https://adoptopenjdk.net/) installed.
@@ -82,7 +82,7 @@ consult the README of the corresponding component:
 
 ## Docker
 
-All projects come with Dockerfiles that can be used to run the services as Docker containers. The [docker-compose.yml](./docker-compose.yml) builds and starts all applications in a single command in the **development** environment (hot module reloading), just like the `run_all_applications` scripts mentioned above. See the [docker-compose.yml](./docker-compose.yml) for more information. For production you can use [docker-compose.prod.yml](./docker-compose.prod.yml).
+All projects come with Dockerfiles that can be used to run the services as Docker containers. The [docker-compose.yml](./docker-compose.yml) builds and starts all applications in a single command in the **development** environment (hot module reloading), just like the `run_all_applications` scripts mentioned above. See the [docker-compose.yml](./docker-compose.yml) for more information. For a production environment, [docker-compose.prod.yml](./docker-compose.prod.yml) can be used.
 
 ### Running production docker compose
 Note that the **production** Dockerfiles make use of [BuildKit](https://docs.docker.com/develop/develop-images/build_enhancements/) features. To be able to build the Docker images, you have to set the `DOCKER_BUILDKIT` environment variable accordingly.

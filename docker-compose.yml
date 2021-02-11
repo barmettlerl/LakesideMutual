@@ -1,3 +1,13 @@
+#
+# This is a docker-compose file to build and start all Lakeside Mutual
+# applications in a single command.
+#
+# To run the applications:
+#   docker-compose up
+#
+# To shut down the applications, simply terminate the previous command.
+#
+
 version: '3.7'
 
 services:
